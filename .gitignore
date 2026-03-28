@@ -1,2 +1,16 @@
-# Ignore VS Code folder
-.vscode/
+# 1. Ignore everything
+*
+
+# 2. But do NOT ignore directories (so we can see into them)
+!*/
+
+# 3. Do NOT ignore your source and documentation files
+!*.cpp
+!*.h
+!*.md
+!.gitignore
+
+# 4. Specifically ignore common compiled outputs just in case
+*.o
+*.out
+*.exe
